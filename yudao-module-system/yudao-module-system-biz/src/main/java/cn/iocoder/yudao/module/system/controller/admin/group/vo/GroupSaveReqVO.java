@@ -23,4 +23,6 @@ public class GroupSaveReqVO {
     @NotNull(message = "状态不能为空")
     private Integer status;
 
+    @Schema(description = "分类", example = "牛马")
+    private String category;
 }

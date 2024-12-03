@@ -1,4 +1,4 @@
-package cn.iocoder.yudao.module.system.controller.admin.group.vo;
+package cn.iocoder.yudao.module.system.controller.admin.student.vo;
 
 import lombok.*;
 import java.util.*;
@@ -9,20 +9,20 @@ import java.time.LocalDateTime;
 
 import static cn.iocoder.yudao.framework.common.util.date.DateUtils.FORMAT_YEAR_MONTH_DAY_HOUR_MINUTE_SECOND;
 
-@Schema(description = "管理后台 - 用户组分页 Request VO")
+@Schema(description = "管理后台 - 学生分页 Request VO")
 @Data
 @EqualsAndHashCode(callSuper = true)
 @ToString(callSuper = true)
-public class GroupPageReqVO extends PageParam {
+public class StudentPageReqVO extends PageParam {
 
     @Schema(description = "名字", example = "李四")
     private String name;
 
-    @Schema(description = "状态", example = "1")
-    private Integer status;
+    @Schema(description = "出生日期")
+    private LocalDateTime birthday;
 
-    @Schema(description = "分类",example = "牛马")
-    private String category;
+    @Schema(description = "简介", example = "你猜")
+    private String description;
 
     @Schema(description = "创建时间")
     @DateTimeFormat(pattern = FORMAT_YEAR_MONTH_DAY_HOUR_MINUTE_SECOND)

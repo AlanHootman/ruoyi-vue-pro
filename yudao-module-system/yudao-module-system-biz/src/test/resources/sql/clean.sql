@@ -32,3 +32,5 @@ DELETE FROM "system_mail_log";
 DELETE FROM "system_notify_template";
 DELETE FROM "system_notify_message";
 DELETE FROM "system_group";
+DELETE FROM "system_student";
+DELETE FROM "system_category";

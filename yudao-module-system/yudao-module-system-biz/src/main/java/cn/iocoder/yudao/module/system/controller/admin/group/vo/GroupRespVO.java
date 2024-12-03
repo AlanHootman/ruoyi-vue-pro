@@ -31,6 +31,10 @@ public class GroupRespVO {
     @DictFormat("common_status") // TODO 代码优化：建议设置到对应的 DictTypeConstants 枚举类中
     private Integer status;
 
+    @Schema(description = "分类", example = "牛马")
+    @ExcelProperty("分类")
+    private String category;
+
     @Schema(description = "创建时间", requiredMode = Schema.RequiredMode.REQUIRED)
     @ExcelProperty("创建时间")
     private LocalDateTime createTime;
