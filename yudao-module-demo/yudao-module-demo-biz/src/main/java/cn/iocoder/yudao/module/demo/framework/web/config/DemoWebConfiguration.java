@@ -5,11 +5,6 @@ import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @description: demo 模块的 web 组件的 configuration
- * @author: jianghm40441 <jianghm40441@hundsun.com>
- * @date: 2024/12/2 19:01
- */
 @Configuration(proxyBeanMethods = false)
 public class DemoWebConfiguration {
 
